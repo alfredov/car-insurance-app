@@ -1,0 +1,26 @@
+{
+  "name": "car-insurance-app",
+  "main": "src/index.ts",
+  "license": "MIT",
+  "scripts": {
+    "after-30-days": "babel-node src/index.ts --extensions \".ts\"",
+    "test": "yarn install && mkdir -p ./dist/coverage && node --expose-gc ./node_modules/.bin/jest --config=./config/jest/index.js -u --json --outputFile=./dist/coverage/test-results.json --logHeapUsage",
+    "test:w": "yarn test --watchAll",
+    "jest": "jest --config=./config/jest/index.js"
+  },
+  "typeCoverage": {
+    "atLeast": 98,
+    "ignoreCatch": true
+  },
+  "devDependencies": {
+    "@babel/core": "^7.13.13",
+    "@babel/node": "^7.13.13",
+    "@babel/preset-env": "^7.13.12",
+    "@babel/preset-typescript": "^7.13.0",
+    "@types/jest": "^26.0.22",
+    "jest": "^26.6.3",
+    "ts-jest": "26.3.0",
+    "ts-loader": "8.0.12",
+    "typescript-coverage-report": "^0.5.0"
+  }
+}
