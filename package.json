@@ -22,5 +22,8 @@
     "ts-jest": "26.3.0",
     "ts-loader": "8.0.12",
     "typescript-coverage-report": "^0.5.0"
+  },
+  "dependencies": {
+    "colors": "^1.4.0"
   }
 }
