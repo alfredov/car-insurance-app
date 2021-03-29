@@ -9,7 +9,7 @@
     "jest": "jest --config=./config/jest/index.js"
   },
   "typeCoverage": {
-    "atLeast": 98,
+    "atLeast": 100,
     "ignoreCatch": true
   },
   "devDependencies": {
